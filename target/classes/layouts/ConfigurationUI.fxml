@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" styleClass="gridPane" stylesheets="@../Custom.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane alignment="CENTER" layoutX="122.0" layoutY="138.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="408.0" styleClass="gridPanel" stylesheets="@../Custom.css" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="50.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="315.0" minWidth="10.0" prefWidth="191.0" />
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="498.0" minWidth="10.0" prefWidth="449.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="10.0" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <CheckBox maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="conf_cbx_title" text="Düzenlemeyi Etkinleştir" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></CheckBox>
+            <Label maxWidth="1.7976931348623157E308" styleClass="conf_title" text="Kullanıcı Bilgileri" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Separator maxWidth="1.7976931348623157E308" prefWidth="200.0" styleClass="conf_s_horizontal" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+            <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" styleClass="conf_label" text="Kullanıcı Adı :" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField styleClass="conf_text_field" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" styleClass="conf_label" text="Şifre :" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField styleClass="conf_text_field" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label maxWidth="1.7976931348623157E308" styleClass="conf_title" text="Şube Bilgileri" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Separator maxWidth="1.7976931348623157E308" prefWidth="200.0" styleClass="conf_s_horizontal" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="7" />
+            <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" styleClass="conf_label" text="ID :" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField styleClass="conf_text_field" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" styleClass="conf_label" text="Adı :" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" styleClass="conf_label" text="Adres :" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <TextField styleClass="conf_text_field" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <TextField styleClass="conf_text_field" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+            <Separator maxWidth="1.7976931348623157E308" prefWidth="200.0" styleClass="conf_s_horizontal" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="11" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefWidth="120.0" styleClass="conf_buttonx" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </GridPane>
+   </children>
+</AnchorPane>

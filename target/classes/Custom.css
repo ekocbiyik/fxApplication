@@ -1,0 +1,206 @@
+
+.borderpane-background {
+    -fx-background-image: url("/images/background2.png");
+    -fx-background-position: center, center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+    -fx-effect: dropshadow(two-pass-box, black, 10, .2, 0, 0);
+}
+
+.top-panel {
+    -fx-background-image: url("/images/header.png");
+    -fx-background-position: left top, center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+    -fx-effect: dropshadow(two-pass-box, black, 10, .2, 0, 0);
+}
+
+.left-panel {
+    -fx-background-position: left top, center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+    -fx-effect: dropshadow(two-pass-box, black, 10, .2, 0, 0);
+    -fx-border-color: transparent black transparent transparent;
+    -fx-fill-height: true;
+}
+
+.bottom-panel {
+    -fx-background-image: url("/images/bottom.png");
+    -fx-background-position: left top, center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+    -fx-effect: dropshadow(two-pass-box, black, 10, .2, 0, 0);
+}
+
+.bottom-text {
+    -fx-font-size: 11px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #e3e3e3;
+}
+
+.btnHome {
+    -fx-background-image: url("/images/btnHome.png");
+    -fx-background-radius: 50%;
+    -fx-background-size: 50px, 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.btnHome:hover {
+    -fx-background-image: url("/images/btnHomeHover.png");
+    -fx-background-size: 50px, 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.btnHistory {
+    -fx-background-image: url("/images/btnHistory.png");
+    -fx-background-radius: 50%;
+    -fx-background-size: 50px, 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.btnHistory:hover {
+    -fx-background-image: url("/images/btnHistoryHover.png");
+    -fx-background-size: 50px, 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.btnConfig {
+    -fx-background-image: url("/images/btnConfig.png");
+    -fx-background-radius: 50%;
+    -fx-background-size: 50px, 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.btnConfig:hover {
+    -fx-background-image: url("/images/btnConfigHover.png");
+    -fx-background-size: 45px, 45px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.btnHelp {
+    -fx-background-image: url("/images/btnHelp.png");
+    -fx-background-radius: 50%;
+    -fx-background-size: 50px, 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.btnHelp:hover {
+    -fx-background-image: url("/images/btnHelpHover.png");
+    -fx-background-size: 45px, 45px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.info-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+    -fx-opacity: 1;
+    -fx-text-fill: #000000;
+}
+
+.cbx-channel {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+}
+
+.cbx-channel-send-signal .box {
+    -fx-background-color: red;
+}
+
+.cbx-channel .box {
+    -fx-border-radius: 3px;
+}
+
+.cbx-channel:selected .mark {
+    -fx-background-color: white;
+}
+
+.cbx-channel:selected .box {
+    -fx-background-color: #28a3f4;
+}
+
+.conf_buttonx {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2586cf;
+    -fx-background-color: #c0c0c0, linear-gradient(#ccc 0%, #ddd 20%, #fff 100%),
+    radial-gradient(center 50% 0%, radius 100%, rgba(204, 204, 204, 0), rgba(255, 255, 255, 0));
+}
+
+.conf_buttonx:hover {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f4f3ff;
+    -fx-background-color: #0d73cf,
+    linear-gradient(#0d64b8 0%, #60b2dd 20%, #0b8fd6 100%),
+    radial-gradient(center 50% 0%, radius 100%, rgba(204, 204, 204, 0), rgba(255, 255, 255, 0));
+}
+
+.conf_title {
+    -fx-alignment: center_left;
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+    -fx-padding: 5 10 5 15;
+    -fx-opacity: 1;
+    -fx-text-fill: #610000;
+    -fx-pref-width: 340;
+    -fx-pref-height: 32;
+}
+
+.conf_label {
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+    -fx-padding: 5 10 5 5;
+    -fx-opacity: 1;
+    -fx-text-fill: #610000;
+}
+
+.conf_s_horizontal {
+    -fx-height: 5px;
+    -fx-background: #717171;
+}
+
+.conf_text_field {
+    -fx-text-fill: -fx-text-inner-color;
+    -fx-highlight-fill: derive(-fx-control-inner-background, -20%);
+    -fx-highlight-text-fill: -fx-text-inner-color;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+    -fx-background-color: linear-gradient(to bottom, derive(-fx-text-box-border, -10%), -fx-text-box-border),
+    linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -9%), -fx-control-inner-background);
+
+    -fx-background-insets: 0, 1;
+    -fx-font-weight: 700;
+    -fx-cursor: text;
+    -fx-padding: 4 7 4 7;
+    -fx-font-size: 12px;
+    /*-fx-pref-width: 320;*/
+}
+
+.conf_text_field:focused {
+    -fx-highlight-fill: -fx-accent;
+    -fx-highlight-text-fill: white;
+    -fx-background-insets: -0.2, 1, -1.4, 3;
+    -fx-background-radius: 3, 2, 4, 0;
+    -fx-prompt-text-fill: transparent;
+}
+
+.conf_cbx_title {
+    -fx-font-weight: 700;
+    /*-fx-padding: 0 0 0 2px;*/
+    -fx-opacity: 1;
+    -fx-text-fill: #610000;
+
+}
+
+.gridPanel {
+    -fx-background-radius: 5, 5, 5, 5;
+    -fx-background-color: #f0f0f0, linear-gradient(#f3f3f3 0%, #f7f7f7 20%, #fff 100%),
+    radial-gradient(center 50% 0%, radius 100%, rgba(204, 204, 204, 0), rgba(255, 255, 255, 0));
+}

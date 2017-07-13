@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="headerPanel" maxHeight="130.0" maxWidth="1.7976931348623157E308" minHeight="120.0" minWidth="900.0" prefHeight="130.0" prefWidth="500.0" styleClass="top-panel" stylesheets="@../Custom.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ekocbiyik.javafx.layouts.controller.HeaderUIController">
+    <children>
+        <Label fx:id="lblOfficeId" alignment="CENTER_RIGHT" layoutX="649.0" layoutY="14.0" maxHeight="40.0" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="270.0" prefHeight="40.0" text="lblOfficeId" textFill="WHITE" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
+            <font>
+                <Font name="SansSerif Bold" size="30.0" />
+            </font>
+        </Label>
+        <HBox alignment="CENTER" layoutX="566.0" layoutY="71.0" spacing="5.0" stylesheets="@../Custom.css" visible="false" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0">
+            <children>
+                <Button fx:id="btnMainUI" mnemonicParsing="false" onAction="#btnMainUIOnClick" prefHeight="50.0" prefWidth="50.0" styleClass="btnHome" />
+                <Button fx:id="btnHistoryUI" mnemonicParsing="false" onAction="#btnHistoryUIOnClick" prefHeight="50.0" prefWidth="50.0" styleClass="btnHistory" />
+                <Button fx:id="btnConfigUI" mnemonicParsing="false" onAction="#btnConfigUIOnClick" prefHeight="50.0" prefWidth="50.0" styleClass="btnConfig" />
+                <Button fx:id="btnHelpUI" mnemonicParsing="false" onAction="#btnHelpUIOnClick" prefHeight="50.0" prefWidth="50.0" styleClass="btnHelp" />
+            </children>
+        </HBox>
+        <ImageView fitHeight="120.0" fitWidth="220.0" layoutX="14.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="5.0">
+            <image>
+                <Image url="@../images/icon.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

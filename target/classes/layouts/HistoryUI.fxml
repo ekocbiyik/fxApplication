@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="historyPanel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="500.0" prefWidth="800.0" stylesheets="@../Custom.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ekocbiyik.javafx.layouts.controller.HistoryUIController">
+    <children>
+        <TableView fx:id="tblHistory" layoutX="14.0" layoutY="85.0" maxHeight="1.7976931348623157E308" minHeight="320.0" minWidth="630.0" prefHeight="425.0" prefWidth="400.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="55.0">
+         <columns>
+            <TableColumn fx:id="colExecutionId" editable="false" prefWidth="75.0" text="Execution Id" visible="false" />
+            <TableColumn fx:id="colSenderSerialNo" prefWidth="150.0" text="Bayi Id" />
+            <TableColumn fx:id="colSerialNumber" editable="false" prefWidth="150.0" text="Seri No" />
+            <TableColumn fx:id="colSuccessful" editable="false" minWidth="2.0" prefWidth="100.0" text="Sonuç" />
+            <TableColumn fx:id="colJobName" editable="false" prefWidth="75.0" text="Job Name" visible="false" />
+            <TableColumn fx:id="colStartDate" editable="false" prefWidth="96.0" text="Başlangıç Tar." visible="false" />
+            <TableColumn fx:id="colRecordDate" editable="false" prefWidth="140.0" text="Kayıt Tar." />
+            <TableColumn fx:id="colSendDate" editable="false" prefWidth="140.0" text="Gönderim Tar." />
+            <TableColumn fx:id="colSent" editable="false" prefWidth="100.0" text="Gönderildi" />
+            <TableColumn fx:id="colFaultException" editable="false" prefWidth="75.0" text="Fault exception" visible="false" />
+            <TableColumn fx:id="colExceptionMessage" editable="false" prefWidth="75.0" text="Exception Message" visible="false" />
+         </columns>
+        </TableView>
+        <TextField fx:id="txtSerialNo" focusTraversable="false" layoutX="14.0" layoutY="14.0" onKeyPressed="#txtSerialNoOnKeyPress" prefWidth="220.0" promptText="Seri Numarası" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="2.0" />
+        <DatePicker fx:id="dpStartDate" editable="false" focusTraversable="false" layoutX="240.0" layoutY="14.0" prefHeight="25.0" prefWidth="140.0" promptText="Başlangıç Tarihi" AnchorPane.topAnchor="2.0" />
+        <DatePicker fx:id="dpEndDate" editable="false" focusTraversable="false" layoutX="390.0" layoutY="14.0" prefHeight="25.0" prefWidth="140.0" promptText="Bitiş Tarihi" AnchorPane.topAnchor="2.0" />
+        <Button fx:id="btnList" layoutX="540.0" layoutY="14.0" minHeight="25.0" minWidth="70.0" mnemonicParsing="false" onAction="#btnListOnClickAction" prefHeight="25.0" prefWidth="80.0" styleClass="conf_buttonx" text="Listele" AnchorPane.topAnchor="2.0" />
+        <Button fx:id="btnRefresh" layoutX="630.0" layoutY="22.0" minHeight="25.0" minWidth="70.0" mnemonicParsing="false" onAction="#btnRefreshOnClickAction" prefHeight="25.0" prefWidth="80.0" styleClass="conf_buttonx" text="Yenile" AnchorPane.topAnchor="2.0" />
+        <Button fx:id="btnExport" layoutX="720.0" layoutY="22.0" minHeight="25.0" minWidth="60.0" mnemonicParsing="false" onAction="#btnExportOnClickAction" prefHeight="25.0" prefWidth="70.0" styleClass="conf_buttonx" text="Rapor" textFill="RED" AnchorPane.topAnchor="2.0">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="10.0" layoutY="47.0" maxHeight="10.0" minHeight="22.0" prefHeight="22.0" text="Kayıt Sayısı:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="30.0" />
+        <Label fx:id="lblRecordSize" layoutX="60.0" layoutY="50.0" maxHeight="10.0" maxWidth="30.0" minHeight="22.0" minWidth="20.0" prefHeight="22.0" prefWidth="20.0" text="0" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="30.0" />
+    </children>
+    <padding>
+        <Insets top="20.0" />
+    </padding>
+</AnchorPane>
