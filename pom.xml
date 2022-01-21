@@ -17,7 +17,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring.version>4.3.2.RELEASE</spring.version>
         <hibernate.version>5.2.2.Final</hibernate.version>
-        <h2db.version>1.4.192</h2db.version>
+        <h2db.version>2.1.210</h2db.version>
     </properties>
 
     <dependencies>
